@@ -1,14 +1,11 @@
 import json
-import os
-
 import pandas as pd
 
 from io import BytesIO
-from xlsxwriter import xmlwriter
 from datetime import datetime, timedelta
 from django.db.models import Count
 from django.views import View
-from django.http import HttpResponse, StreamingHttpResponse
+from django.http import HttpResponse
 
 from .models import Robot
 from .forms import RobotForm
@@ -33,13 +30,13 @@ class RobotView(View):
                     version=version,
                     created=created)
                 robot.save()
-                return HttpResponse('Your data has been saved!')
+                return HttpResponse('Данные успешно сохранены!!')
 
             else:
                 return HttpResponse(form.errors.as_json(), 500)
 
         except Exception as e:
-            return HttpResponse('Incorrect input data', 500)
+            return HttpResponse(f'Ошибка: {e}', 500)
 
 
 class RobotLastWeekDataView(View):
@@ -88,4 +85,4 @@ class RobotLastWeekDataView(View):
             return response
 
         except Exception as e:
-            return HttpResponse(f'Oops, Something went wrong, [{e}]', 500)
+            return HttpResponse(f'Ошибка: [{e}]', 500)
