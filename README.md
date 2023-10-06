@@ -2,6 +2,7 @@
 ### Task 1.
 /robots/ — эндпоинт
 
+[ccылка](https://github.com/Dobrovera/R4C/assets/100479798/84f75f03-f41f-4964-8abc-eb15f1c1927c) на видео демонстрацию
 
 <hr>
 
@@ -10,6 +11,7 @@
 
 При переходе на url автоматически скачивается excel файл
 
+[ccылка](https://github.com/Dobrovera/R4C/assets/100479798/9b298c5d-147f-4a29-b8de-a395b25776a4) на видео демонстрацию
 
 <hr>
 
@@ -39,6 +41,7 @@ touch .env
 + EMAIL_HOST_USER = 'company_email@gmail.com'
 + EMAIL_HOST_PASSWORD = 'your_password'
 
+[ccылка](https://github.com/Dobrovera/R4C/assets/100479798/2dd83d96-666f-4f3c-a4a9-e9d86a32b8da) на видео демонстрацию
 
 <hr>
 
